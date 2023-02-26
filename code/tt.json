@@ -1,0 +1,21 @@
+{
+
+  "emr_id": "ZY000001",
+
+  "age": "7",
+
+  "gender": "男性",
+
+  "chief_complaint":"反复咳嗽2月。",
+
+  "history_of_present_illness": "患儿于2月前无明显诱因下出现咳嗽，呈阵发性、刺激性干咳，无痰，无发热，无气促，无发绀,少许鼻塞流涕。于我院门诊就诊，肺炎。",
+
+  "past_history": "既往体健，否认“肝炎、肺结核”等急慢性传染病病史",
+
+  "physical_examination":"无",
+
+  "supplementary_examination":"无",
+
+  "diagnosis": ["肺炎"]
+
+}

@@ -1,0 +1,66 @@
+{
+    "model_type": "PyTorch",
+    "runtime": "python3.7",
+    "model_algorithm": "clinical competition",
+    "apis": [{
+        "protocol": "http",
+        "url": "/",
+        "method": "post",
+        "request": {
+            "Content-type": "multipart/form-data",
+            "data": {
+                "type": "object",
+                "properties": {
+                    "json_line": {
+                        "type": "file"
+                    }
+                }
+        },
+        "response": {
+            "Content-type": "application/json",
+            "data": {
+                "type": "object",
+                "properties": {
+                    "prob": {
+                        "type": "float"
+                    }
+                }
+            }
+        }
+    }}],
+    "dependencies": [
+        {
+            "installer": "pip",
+            "packages": [
+                {
+                    "package_name": "torch",
+                    "package_version": "1.11.0",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "scipy"
+                },
+                {
+                    "package_name": "tqdm"
+                },
+                {
+                    "package_name": "numpy"
+                },
+                {
+                    "package_name": "pandas"
+                },
+                {
+                    "package_name": "sklearn"
+                },
+                {
+                    "package_name": "joblib"
+                },
+                {
+                    "package_name": "transformers"
+                }
+            ]
+        }
+    ]
+
+}
+
